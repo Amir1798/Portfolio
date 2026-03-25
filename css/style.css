@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.project {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#contact i {
+    margin-right: 8px;
+    color: #4CAF50;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #333;
+}
+
+#contact a:hover {
+    color: #4CAF50;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+.skill {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.stars {
+    color: #FFD700; /* couleur dorée pour les étoiles */
+    font-size: 18px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* centrer texte et photo horizontalement */
+    gap: 20px; /* espace entre photo et texte */
+    flex-wrap: wrap; /* pour que ça reste responsive */
+}
+
+.profile-photo {
+    width: 100px; /* taille de la photo */
+    height: 100px;
+    border-radius: 50%; /* rond */
+    object-fit: cover; /* recadrer proprement */
+    border: 2px solid white; /* optionnel, contour */
+}
+
+.header-text h1 {
+    margin: 0;
+}
+
+.header-text p {
+    margin: 5px 0 0 0;
+}
+.job {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#soft-skills ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    max-width: 500px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#skills-languages {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.skills-left, .skills-right {
+    flex: 1;
+    min-width: 300px;
+}
+
+.skill {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.stars {
+    color: #FFD700; /* doré pour les étoiles */
+    font-size: 18px;
+}
+
+#interests-education {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.interests-left, .interests-right {
+    flex: 1;
+    min-width: 300px;
+}
+
+.interests-left ul, .interests-right ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#projects {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.project-card {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    margin: 15px 0 10px;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background: #4CAF50;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+.project-card a:hover {
+    background: #45a049;
+}
+
+/* Effet hover 🔥 */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}

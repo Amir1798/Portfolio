@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Amir Kallel</title>
+    <style>
+        /* ====== GLOBAL ====== */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        * {
+            transition: all 0.3s ease;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        /* ====== HEADER ====== */
+        header {
+            background-color: #1f1f1f;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header nav a {
+            color: #bbb;
+            margin: 0 15px;
+        }
+        header nav a:hover {
+            color: #4CAF50;
+        }
+
+        /* ====== SECTIONS ====== */
+        section {
+            padding: 50px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* ====== ABOUT ====== */
+        #about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px auto;
+            object-fit: cover;
+        }
+        #about p {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.5;
+        }
+
+        /* ====== CONTACT ====== */
+        #contact a {
+            color: #bbb;
+            margin-right: 15px;
+        }
+        #contact a:hover {
+            color: #4CAF50;
+        }
+
+        /* ====== CARDS (Projects, Skills, Jobs) ====== */
+        .projects-container, .skills-container, .experience-container, .certificates-container, .edu-container, .interest-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card, .skill-card, .job, .certificate-card, .edu-card, .interest-card {
+            background-color: #1e1e1e;
+            color: #ddd;
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+        .project-card img, .certificate-card img, .edu-card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .project-card h3, .skill-card h3, .job h3, .certificate-card h3, .edu-card h3, .interest-card h3 {
+            margin: 15px 0 10px;
+        }
+        .project-card p, .skill-card p, .job p, .certificate-card p, .edu-card p, .interest-card p {
+            font-size: 14px;
+            color: #ddd;
+        }
+        .project-card a, .certificate-card a {
+            display: inline-block;
+            margin-top: 10px;
+            background: #4CAF50;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+        }
+        .project-card a:hover, .certificate-card a:hover {
+            background: #45a049;
+        }
+        .project-card:hover, .skill-card:hover, .job:hover, .certificate-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        /* ====== STARS ====== */
+        .stars {
+            color: #FFD700;
+        }
+
+        /* ====== FOOTER ====== */
+        footer {
+            background-color: #1f1f1f;
+            color: #aaa;
+            padding: 20px;
+            text-align: center;
+            
+        }
+        /* ====== CONTACT FORM ====== */
+.contact-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+}
+
+.form-group input {
+    flex: 1;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #121212;
+    color: #fff;
+    outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaa;
+}
+
+.contact-form button {
+    background: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background: #45a049;
+}
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Amir Kallel</h1>
+        <nav>
+            <a href="#about">À propos</a>
+            <a href="#experience">Expérience</a>
+            <a href="#skills">Compétences</a>
+            <a href="#projects">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <img src="images/amir.jpg" alt="Amir Kallel">
+        <p>
+            Diplômé d’ingénieur à ESPRIT La Ghazela, 27 ans, je suis à la recherche d’un emploi.  
+            Mes compétences incluent le développement web (React.js, Spring Boot), systèmes embarqués, Python, Machine Learning et Business Intelligence.  
+            Contact : <a href="mailto:kallelmir21@gmail.com">kallelmir21@gmail.com</a> | 
+            <a href="https://www.linkedin.com/in/amir-kallel-176b09291/" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/Amir1798" target="_blank">GitHub</a>
+        </p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <h2>Expériences et Stages</h2>
+        <div class="experience-container">
+            <div class="job">
+                <h3>Conseiller commercial & Agent de stock – Tutto Sport</h3>
+                <p>Juin 2025 – Décembre 2025</p>
+                <p>
+                Accueil et conseil des clients dans le choix des produits sportifs, en assurant une excellente expérience client.  
+                Participation active à la gestion du stock pour les rayons homme, femme et enfants, incluant l’organisation, le suivi et le réapprovisionnement des produits.  
+                Gestion des commandes en ligne ainsi que le suivi des livraisons afin d’assurer un service rapide et efficace.  
+                Développement de compétences en communication, vente et gestion logistique.
+                 </p>
+            </div>
+            <div class="job">
+                <h3>Stage PFE – ESPRIT DSI</h3>
+                <p>Février 2024 – Septembre 2024 </p>
+                <p> Conception et développement d’une plateforme de micro-assurance en Tunisie utilisant la stack MERN (MongoDB, Express, React, Node.js).  
+                Mise en place des fonctionnalités principales : gestion des utilisateurs, polices d’assurance, sinistres, paiements et remboursements.  
+                Participation à l’architecture du système et à l’amélioration de l’expérience utilisateur.  
+                Ce projet m’a permis de renforcer mes compétences en développement fullstack et en gestion de projet. </p>
+            </div>
+            <div class="job">
+                <h3>Stage 4ème année – ESPRIT DSI</h3>
+                <p>Juin 2023– Septembre 2023 </p>
+                <p>
+                Conception et développement d’une application web visant à améliorer le site actuel de l’école ESPRIT.  
+                Développement du front-end avec React.js et du back-end avec Spring Boot.  
+                Gestion des données via une base Oracle, incluant le stockage, la manipulation et l’optimisation des requêtes.  
+                Contribution à l’amélioration des performances et de l’interface utilisateur du système.
+            </p>
+            </div>
+            <div class="job">
+                <h3>Stage 3ème année – ESPRIT DSI</h3>
+                <p>Juillet 2022– Septembre 2022 </p>
+                 Développement d’une application web e-commerce simple permettant la gestion d’une boutique en ligne.  
+                Réalisation du front-end avec React.js et implémentation du back-end avec Spring Boot.  
+                Gestion de la base de données avec MySQL pour le stockage des produits et des utilisateurs.  
+                Ce projet m’a permis de consolider mes bases en développement web et en architecture client-serveur.
+            </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+   <section id="skills">
+    <h2>Compétences</h2>
+    <div class="skills-container">
+        <!-- Gauche : Outils et compétences -->
+        <div class="skill-card">
+            <h3>Développement Web / Backend</h3>
+            <p>
+                React.js : <span class="stars">★★★☆☆</span><br>
+                Spring Boot : <span class="stars">★★★☆☆</span><br>
+                Node.js : <span class="stars">★★★☆☆</span><br>
+                Express.js : <span class="stars">★★★☆☆</span><br>
+                MongoDB : <span class="stars">★★★☆☆</span><br>
+                REST APIs : <span class="stars">★★★☆☆</span><br>
+                Git / GitHub : <span class="stars">★★★★☆</span>
+            </p>
+
+            <h3>Systèmes Embarqués / IoT</h3>
+            <p>
+                Wokwi : <span class="stars">★★★★☆</span><br>
+                ESP32 / Arduino : <span class="stars">★★★★☆</span><br>
+                Node-RED : <span class="stars">★★★☆☆</span><br>
+                Capteurs (Potentiomètre, Poids, Distance) : <span class="stars">★★★☆☆</span><br>
+                Afficheur LCD : <span class="stars">★★★☆☆</span>
+            </p>
+
+            <h3>Python / Machine Learning</h3>
+            <p>
+                Python : <span class="stars">★★★☆☆</span><br>
+                OpenCV : <span class="stars">★★★☆☆</span><br>
+                Scikit-learn : <span class="stars">★★★☆☆</span><br>
+                Pandas / NumPy : <span class="stars">★★★☆☆</span>
+            </p>
+
+            <h3>Business Intelligence / Data Analysis</h3>
+            <p>
+                Power BI : <span class="stars">★★★☆☆</span><br>
+                Excel Avancé : <span class="stars">★★★☆☆</span><br>
+                MySQL : <span class="stars">★★★☆☆</span>
+            </p>
+
+            <h3>Outils Design / Productivité</h3>
+            <p>
+                Canva : <span class="stars">★★★☆☆</span><br>
+                Photoshop : <span class="stars">★★★☆☆</span><br>
+                Microsoft Word / Excel : <span class="stars">★★★☆☆</span>
+            </p>
+        </div>
+
+        <!-- Droite : Langues -->
+        <div class="skill-card">
+            <h3>Langues</h3>
+            <p>
+                Français : <span class="stars">★★★☆☆</span><br>
+                Anglais : <span class="stars">★★★☆☆</span><br>
+                Arabe : <span class="stars">★★★☆☆</span>
+            </p>
+        </div>
+    </div>
+</section>
+
+    <!-- INTEREST + EDUCATION -->
+    <section id="interest-edu">
+        <div class="interest-container">
+            <div class="interest-card">
+                <h3>Centres d’intérêt</h3>
+                <p>Photography, Music, Participation à des compétitions sportives</p>
+            </div>
+            <div class="edu-container">
+                <div class="edu-card">
+                    <h3>Formation</h3>
+                    <p>2018 : Bac informatique – Lycée El Menzah 6</p>
+                    <p>2019–2024 : Diplôme d’ingénieur en informatique – ESPRIT, Tunis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates">
+        <h2>Certificats</h2>
+        <div class="certificates-container">
+            <div class="certificate-card"><p>Microsoft Word Mastery</p></div>
+            <div class="certificate-card"><p>Fundamentals of Marketing</p></div>
+            <div class="certificate-card"><p>Learn ReactJS Certification</p></div>
+            <div class="certificate-card"><p>Claude101 Certification</p></div>
+            <div class="certificate-card"><p>Principes fondamentaux du marketing digital – Google</p></div>
+            <div class="certificate-card"><p>Photoshop Udemy (BeginnerToAdvanced)</p></div>
+            <div class="certificate-card"><p>Basics of DAX in Power BI</p></div>
+            <div class="certificate-card"><p>Business Email Certificate</p></div>
+            <div class="certificate-card"><p>Build your business brand using Canva (Coursera)</p></div>
+            <div class="certificate-card"><p>Basics of Microsoft Power BI</p></div>
+            <div class="certificate-card"><p>CSS Complete Course – Udemy</p></div>
+            <div class="certificate-card"><p>Build Free Website WordPress</p></div>
+            <div class="certificate-card"><p>Applications of AI for Predictive Maintenance – NVIDIA</p></div>
+            <div class="certificate-card"><p>Applications of AI for Anomaly Detection – NVIDIA</p></div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Mes Projets</h2>
+        <div class="projects-container">
+
+            <div class="project-card">
+                <img src="images/projet-pfe.png" alt="Micro Assurance">
+                <h3>Plateforme de Micro-Assurance en Tunisie</h3>
+                <p>
+                    Développement d’une application web fullstack utilisant MERN.  
+                    Gestion utilisateurs, polices, sinistres et paiements.
+                </p>
+                <a href="https://github.com/Amir1798/ProjetPFE" target="_blank">Voir sur GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <img src="images/projet-Embarqué.png" alt="Poubelle intelligente">
+                <h3>Poubelle Intelligente – Système Embarqué IoT</h3>
+                <p>
+                    Système embarqué simulé avec Wokwi + Node-RED + MySQL.  
+                    Affichage des valeurs de capteurs (potentiomètre, distance, poids) et écran LCD.
+                </p>
+                <a href="https://github.com/Amir1798/PIEmbarque" target="_blank">Voir sur GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <img src="images/projet3.png" alt="Serrure vocale">
+                <h3>Serrure Intelligente avec Reconnaissance Vocale</h3>
+                <p>
+                    Système embarqué avec reconnaissance vocale simulée sur Wokwi.  
+                    Machine Learning pour mot clé "ON" + Python pour ouverture de serrure.
+                </p>
+                <a href="https://github.com/Amir1798/Serrure-intelligente-avec-reconnaissance-vocale" target="_blank">Voir sur GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <img src="images/projet4.png" alt="Hand Gesture">
+                <h3>Hand Gesture Controller</h3>
+                <p>
+                    Application Python pour contrôler PC avec gestes (scroll, souris, luminosité).  
+                    Utilisation de la vision par ordinateur pour l’interaction naturelle.
+                </p>
+                <a href="https://github.com/Amir1798/Hand-Gesture-Controller" target="_blank">Voir sur GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <img src="images/projet5.png" alt="Power BI">
+                <h3>Power BI Sales Dashboard</h3>
+                <p>
+                    Dashboard interactif Power BI à partir de données Excel.  
+                    Analyse des ventes et visualisations pour prise de décision.
+                </p>
+                <a href="https://github.com/Amir1798/powerbi-sales-dashboard" target="_blank">Voir sur GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <img src="images/projet6.png" alt="Accidents Tunisie">
+                <h3>Analyse des Accidents en Tunisie – Power BI & MySQL</h3>
+                <p>
+                    BI avec Excel + MySQL + Python pour analyser les accidents.  
+                    Dashboards interactifs Power BI pour tendances et statistiques.
+                </p>
+                <a href="https://github.com/Amir1798/Road-accidents-powerbi-analysis" target="_blank">Voir sur GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <img src="images/projet7.png" alt="Smart Parking">
+                <h3>Smart Parking – Système Embarqué</h3>
+                <p>
+                    Parking intelligent simulé avec Wokwi.  
+                    Gestion automatique des places et optimisation grâce aux systèmes embarqués.
+                </p>
+                <a href="https://github.com/Amir1798/Smart-Parking" target="_blank">Voir sur GitHub</a>
+            </div>
+
+        </div>
+    </section>
+   <section id="contact">
+    <h2>Contactez-moi</h2>
+
+    <div class="contact-container">
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" name="prenom" placeholder="Prénom" required>
+                <input type="text" name="nom" placeholder="Nom" required>
+            </div>
+
+            <input type="email" name="email" placeholder="Email" required>
+
+            <input type="text" name="objet" placeholder="Objet" required>
+
+            <textarea name="message" rows="5" placeholder="Votre message..." required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+    
+</section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Amir Kallel - Portfolio</p>
+    </footer>
+
+</body>
+</html>
